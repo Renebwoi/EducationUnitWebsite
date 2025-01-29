@@ -1,0 +1,103 @@
+header nav.firstNav ul li:nth-of-type(3) a::after{
+    content: " ";
+    width: 15px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    /* clip-path: polygon(50% 100%, 0% 0%, 100% 0%); */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* real triangles */
+}
+section.heroSection{
+    /* width: 100svw; */
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding: 0px 30px;
+}
+section.heroSection h1{
+    color: white;
+    /* font-size: 20px; */
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+section.heroSection p{
+    color: white;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-style: italic;
+}
+
+
+.programs{
+    padding: 20px;
+}
+.programs h2{
+    text-align: center;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+
+.programsHold{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.programme{
+    width: 30%;
+    height: 500px;
+    background-color: aquamarine;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.programme img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.programme h3{
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    text-align: center;
+    margin: 20px 0px;
+}
+.programme a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    transition-duration: 0.2s;
+}
+.programme a:hover{
+    scale: 1.05;
+    /* background-color: white;
+    color: black; */
+    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 850px) {
+    .programsHold{
+        flex-direction: column;
+        align-items: center;
+    }
+    .programme{
+        width: 90%;
+    }
+}

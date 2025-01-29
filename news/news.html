@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Innovation Unit</title>
+    <link rel="icon" href="../default/logotrans.png" type="image/x-icon">
+    <link rel="stylesheet" href="../default/default.css">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header>
+        <img src="../default/logotrans.png" id="headerlogo" alt="Education Unit Logo" srcset="https://ict.unn.edu.ng/wp-content/uploads/sites/20/2021/05/UNN-Logo-Reloaded-200x200.png">
+        <p class="headname">EDUCATION UNIT <br> UNIVERSITY OF NIGERIA</p>
+        <nav class="firstNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../programs/programs.html">Our Programs</a></li>
+                <li><a href="../news/news.html">News And Events</a></li>
+                <li><a href="../resources/resources.html">Resources</a></li>
+                <li><a href="../contact/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <input type="button" id="searchIcon1" title="Search Button">
+        <input type="search" id="searchIcon2" placeholder="Search Here" title="Search Here">
+        <input type="button" class="Hamburger" onclick="showMenu()" title="Menu Button">
+        <nav class="secondNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../programs/programs.html">Our Programs</a></li>
+                <li><a href="../news/news.html">News And Events</a></li>
+                <li><a href="../resources/resources.html">Resources</a></li>
+                <li><a href="../contact/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>News and Events</h1>
+        <section class="newsbox">
+            <!-- image, heading and paragraph text -->
+                <img src="../otherImages/R.jfif" alt="News 1">
+                <h2>The Innovation Unit celebrates another year of progress.</h2>
+                <p>Since 1962, the EI unit has reached heights as required in their visions and goals they have for each year.  
+                    And every year new ways to reinforce learning are being issued. This year marks another, 
+                    of students who come together and strive to achieve a common goal set by the EI unit moderators and teachers.
+                </p>
+                <button class="backButton" type="button" title="previous news" onclick="previousNews()"></button>
+                <button class="forwardButton" type="button" title="next news" onclick="nextNews()"></button>
+        </section>
+
+        <h1>More News</h1>
+
+        <section class="moreNews">
+            <!-- an image and a div containing a heading and paragraph -->
+             <img src="../otherImages/Rr.jfif" alt="news">
+            <div class="news">
+                <h2>The Innovation Unit sets another great milestone in the innovative industry.</h2>
+                <p>
+                    2025 wll be the year EI unit would be launching its very first standard skill enhancing seminars for students across the globe.
+                    it encompasses the nature of a classroom feel from the comfort of your home, through the internet. 
+                    Since the covid-19 incident which made everything to be done online. 
+                    EI unit has strived tro find a way that is conducive and worth while.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Contact Us</h3>
+        <section class="footerDetails">
+            <div class="phone">
+                <img src="../default/phoneIcon.png" alt="phone number" width="100px">
+                <p class="phoneNumber">08123456789</p>
+            </div>
+            <div class="line"></div>
+            <div class="email">
+                <img src="../default/emailWhite.png" alt="email Icon" width="100px">
+                <p class="email address">eiu@unn.ng</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../default/default.js"></script>
+    <script src="news.js"></script>
+</body>
+</html>

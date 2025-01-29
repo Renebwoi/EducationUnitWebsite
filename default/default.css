@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_opsz\,wght.ttf);
+  }
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #096C3A;
+}
+
+#headerlogo{
+    width: 70px;
+    height: 70px;
+    margin: 0px 20px;
+}
+.headname{
+    font-family: Inter;
+    font-size: 16px;
+    width: 10svw;
+    color: #ffffff;
+}
+nav.firstNav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header nav.firstNav{
+    width: 75svw;
+    margin: 20px;
+}
+header nav.firstNav ul li a{
+    float: left;
+    padding: 0px 2svw;
+    text-decoration: none;
+    color: white;
+    font-family: Inter;
+    position: relative;
+}
+/* header nav.firstNav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: 2.5px;
+} */
+header nav.firstNav ul li a::before{
+    content: " ";
+    width: 0%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    border-radius: 5px;
+
+    transition-duration: 0.2s;
+}
+
+header nav.firstNav ul li a:hover::before{
+    content: " ";
+    width: 80%;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 17px;
+    left: 25px;
+    border-radius: 5px;
+
+    /* clip-path: polygon(50% 100%, 0% 0%, 100% 0%); */
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); real triangles */
+}
+header nav.firstNav ul li a::after{
+    content: " ";
+    width: 15px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); real triangles */
+}
+header nav.firstNav ul li:nth-of-type(1) a::after{
+    content: " ";
+    width: 15px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    /* clip-path: polygon(50% 100%, 0% 0%, 100% 0%); */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* real triangles */
+}
+header nav.secondNav{
+    display: none;
+}
+#searchIcon1{
+    background-color: transparent;
+    background-image: url(searchWhite.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-width: 0px;
+    position: relative;
+    right: 2svw;
+}
+#searchIcon2{
+    display: none;
+}
+.Hamburger{
+    display: none;
+}
+
+
+
+
+
+footer{
+    background-color: #096C3A;
+    width: 100%;
+
+}
+footer h3{
+    text-align: center;
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.footerDetails{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+.line{
+    background-color: #ffffff;
+    height: 100%;
+    width: 5px;
+    border-radius: 3px;
+    margin: 0px 30px;
+}
+.phone,.email{
+    width: 150px;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    #searchIcon1{
+        display: none;
+    }
+    #searchIcon2{
+        /* display: block; */
+        display: none;
+        background-color: #d3f5e2;
+        background-image: url(searchIcon.png);
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: 5px;
+        /* background-image: none; */
+        width: 50%;
+        height: 30px;
+        right: 0px;
+        margin-left: 30px;
+        border-width: 0px;
+    }
+    #searchIcon2::placeholder{
+        position: relative;
+        left: 5px;
+    }
+
+    header nav.firstNav{
+        display: none;
+    }
+    header nav.secondNav{
+        display: none;
+        /* display: block; */
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        width: 80svw;
+        height: 100svh;
+        z-index: 2;
+        background-color: #d3f5e2;
+    }
+    header nav.secondNav ul{
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header nav.secondNav ul li a{
+        padding: 0px 2svw;
+        text-decoration: none;
+        color: black;
+        font-family: Inter;
+        position: relative;
+    }
+    header nav.secondNav ul li a:hover{
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 2.5px;
+    }
+    header nav.secondNav ul li a::after{
+        content: " ";
+        width: 10px;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        top: 5px;
+        right: -5px;
+        clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+        /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); real triangles */
+    }
+
+    .Hamburger{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        background-image: url(hamburger.svg);
+        background-size: cover;
+        border-width: 0px;
+        position: absolute;
+        /* position: fixed; */
+        right: 20px;
+        z-index: 3;
+        transition-duration: 1s;
+    }
+    .hamCancel{
+        background-image: url(cancel.svg);
+        /* background-color: black; */
+    }
+
+
+    .phone>img,
+    .email>img{
+        width: 70px;
+        height: 70px;
+        margin-top: 20px;
+    }
+    footer>h3{
+        padding-top: 10px;
+    }
+}

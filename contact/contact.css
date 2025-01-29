@@ -1,0 +1,288 @@
+/* section.heroSection{
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    padding: 0px 30px;
+}
+section.heroSection h1{
+    color: white;
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+section.heroSection p{
+    color: white;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-style: italic;
+}
+
+section.vmission{
+    padding: 0px 30px;
+}
+#professorImg{
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+
+#professorImg2{
+    width: 50svw;
+    aspect-ratio: 2/1.3;
+    border-radius: 5px;
+}
+#professorImg3{
+    width: 45svw;
+    aspect-ratio: 2/1.3;
+    border-radius: 5px;
+}
+.visionHold{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+.visionInner{
+    padding-left: 20px;
+}
+.visionInner h2{
+    margin-bottom: 30px;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.missionHold{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    align-items: center;
+}
+.missionInner{
+    padding-right: 20px;
+}
+.missionInner h2{
+    margin-bottom: 30px;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.moreAbout{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    align-items: center;
+}
+.mAboutInner{
+    padding-right: 20px;
+}
+.mAboutInner h2{
+    margin-bottom: 30px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-style: italic;
+    font-weight: 400;
+}
+.mAboutInner p{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+    .visionHold,
+    .moreAbout,
+    .missionHold{
+        flex-direction: column;
+    }
+
+    #professorImg,
+    #professorImg2,
+    #professorImg3{
+        width: 80svw;
+        margin-bottom: 30px;
+    }
+
+} */
+
+
+
+header nav.firstNav ul li:nth-of-type(6) a::after{
+    content: " ";
+    width: 15px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    /* clip-path: polygon(50% 100%, 0% 0%, 100% 0%); */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* real triangles */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-us {
+    width: 100%;
+    background-color: #d6f5e2;
+    padding: 20px 0;
+  }
+  
+  .contact-header {
+    /* text-align: center; */
+    padding: 10px 0;
+    background-color: #bce8c5;
+    height: 150px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-header h1 {
+    margin: 0;
+    font-size: 24px;
+    /* color: #096C3A; */
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .contact-details,
+  .send-message {
+    flex: 1;
+    margin: 0 10px;
+    /* text-align: center; */
+  }
+  
+  .contact-details .logo {
+    width: 100px;
+    margin: 10px auto;
+  }
+  
+  .contact-details h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  .contact-details>h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 15px;
+  }
+
+  .innerContactDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #dff1e6;
+    border-radius: 5px;
+    padding: calc(20px + 1vw);
+    width: 80%;
+  }
+  
+  .contact-details p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .contact-details a {
+    color: #096C3A;
+    text-decoration: none;
+  }
+  
+  .send-message h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .form-row {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    height: 50px;
+    /* max-width: 300px; */
+    padding: 10px;
+    margin: 4px 0;
+    border: 0px solid #ccc;
+    box-shadow: 0 0 5px 1px #ccc;
+    border-radius: 2px;
+    background-color: #d6f5e2;
+  }
+  #email,
+  #message {
+    width: 100%;
+  }
+  
+  form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-btn {
+    padding: 15px 20px;
+    background-color: #096C3A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    width: 50%;
+    margin: 30px 0;
+  }
+  
+  .submit-btn:hover {
+    background-color: #074e2a;
+  }
+  
+  .recaptcha {
+    display: flex;
+    /* align-items: center; */
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .recaptcha label {
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 850px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-details,
+    .send-message {
+      margin: 10px 0;
+    }
+  
+    .contact-details {
+      text-align: center;
+    }
+    .innerContactDetails{
+      width: 100%;
+    }
+  
+    .send-message {
+      text-align: center;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  }
