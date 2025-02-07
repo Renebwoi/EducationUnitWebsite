@@ -16,7 +16,7 @@ document.querySelector('.newsForm').addEventListener('submit', function(event) {
     const body = document.querySelector('.newsBody').value;
     // Add your JavaScript code to handle the form submission here
 
-    fetch('http://localhost:3003/api/postNews', {
+    fetch('https://edunitbackend.onrender.com/api/postNews', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ document.querySelector('.projectForm').addEventListener('submit', function(event
     }
     // Submitting the form to the backend
 
-    fetch('http://localhost:3003/api/postProjects', {
+    fetch('https://edunitbackend.onrender.com/api/postProjects', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

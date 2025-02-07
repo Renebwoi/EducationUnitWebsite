@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
     // Add your JavaScript code to handle the form submission here
 
-    fetch('http://localhost:3003/api/checkUser', {
+    fetch('https://edunitbackend.onrender.com/api/checkUser', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
